@@ -12,6 +12,6 @@ public class Main {
 
         Seller seller = new Seller(1, "fulano", "fulano@gmail.com", new Date(), 2000.0, obj);
         System.out.println(seller);
-        
+
     }
 }
