@@ -1,7 +1,11 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import model.entities.Department;
+
+import javax.xml.soap.Detail;
+
 public class Main {
     public static void main(String[] args) {
 
+        Department obj = new Department(1, "nome qualquer");
+        System.out.println(obj);
     }
 }
