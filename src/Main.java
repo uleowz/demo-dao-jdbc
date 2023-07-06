@@ -35,5 +35,14 @@ public class Main {
         for (Seller obj : lista) {
             System.out.println(obj);
         }
+
+
+        System.out.println();
+
+
+        System.out.println("TESTE Seller Insert");
+        Seller newSeller = new Seller(null, "Leo", "Leo@gmail.com", new Date(), 4000.0, dep);
+        sellerDao.insert(newSeller);
+        System.out.println("Id: " + newSeller.getId());
     }
 }
