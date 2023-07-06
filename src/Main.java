@@ -11,6 +11,7 @@ public class Main {
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
+        System.out.println("TESTE Seller FindById: ");
         Seller sellerFindOutById = sellerDao.findById(3);
         System.out.println(sellerFindOutById);
 
