@@ -54,5 +54,13 @@ public class Main {
         newSeller.setName("Gigi da Cobra");
         sellerDao.update(newSeller);
         System.out.println("TUDO CERTO (eu espero...)");
+
+
+        System.out.println();
+
+
+        System.out.println("TESTE Seller DeleteById");
+        sellerDao.deleteById(12);
+        System.out.println("TÁ FEITO");
     }
 }
