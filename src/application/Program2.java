@@ -17,7 +17,10 @@ public class Program2 {
         System.out.println();
 
 
-        System.out.println("TESTE ");
+        System.out.println("TESTE Department Update");
+        dep.setName("RG -Recursos Humanos");
+        dep.setId(5);
+        depDao.update(dep);
 
     }
 

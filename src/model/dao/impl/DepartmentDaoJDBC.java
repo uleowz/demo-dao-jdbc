@@ -4,6 +4,7 @@ import db.DB;
 import model.dao.DepartmentDao;
 import model.entities.Department;
 
+import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.List;
 
@@ -55,7 +56,24 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 
     @Override
     public void update(Department obj) {
+        PreparedStatement st = null;
 
+        try {
+            conn = DB.getConn();
+            st = conn.prepareStatement("UPDATE department " +
+                    "SET Name = ?" +
+                    "WHERE Id = ?");
+            st.setString(1, obj.getName());
+            st.setInt(2, obj.getId());
+
+            st.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+        finally {
+            DB.closeStatement(st);
+        }
     }
 
     @Override
