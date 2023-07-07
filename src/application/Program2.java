@@ -22,6 +22,27 @@ public class Program2 {
         dep.setId(5);
         depDao.update(dep);
 
+
+        System.out.println();
+
+
+        System.out.println("TESTE Department DeleteById");
+//        depDao.deleteById(5);
+//        depDao.deleteById(6);
+//        depDao.deleteById(7);
+//        depDao.deleteById(8);
+//        depDao.deleteById(9);
+//        depDao.deleteById(10);
+//        depDao.deleteById(11);
+//        depDao.deleteById(12);
+//        depDao.deleteById(13);
+
+
+        System.out.println();
+
+
+        System.out.println("TESTE Department");
+
     }
 
 }
